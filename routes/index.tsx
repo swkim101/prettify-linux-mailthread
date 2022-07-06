@@ -68,6 +68,9 @@ export default function Home({ data }: PageProps<Email | null>) {
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
       <div><a href="https://github.com/swkim101/prettify-linux-mailthread">👀 source code / issues (github)</a></div>
       <h1 class={h1}>Prettify Kernel Mailing Thread</h1>
+      { data ||
+        <div> try this: https://lore.kernel.org/lkml/E17yelj-0005CD-00@pegasus/ </div>
+      }
       <div>
         <form>
           <input id="username" type="text" class={inp} name="q" value={url} placeholder="e.g., https://lore.kernel.org/lkml/E17yO3f-0002MM-00@pegasus" />
