@@ -66,6 +66,7 @@ export default function Home({ data }: PageProps<Email | null>) {
   const h1 = tw`text-4xl my-10`
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
+      <div><a href="https://github.com/swkim101/prettify-linux-mailthread">👀 source code / issues (github)</a></div>
       <h1 class={h1}>Prettify Kernel Mailing Thread</h1>
       <div>
         <form>
