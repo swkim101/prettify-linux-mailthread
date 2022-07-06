@@ -1,4 +1,6 @@
-# fresh project
+# Prettify-linux-mails
+
+![demo](!./demo.gif)
 
 ### Usage
 
@@ -7,5 +9,3 @@ Start the project:
 ```
 deno task start
 ```
-
-This will watch the project directory and restart as necessary.

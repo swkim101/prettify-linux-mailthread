@@ -67,12 +67,14 @@ export default function Home({ data }: PageProps<Email | null>) {
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
       <h1 class={h1}>Prettify Kernel Mailing Thread</h1>
-      <form>
-        <input id="username" type="text" class={inp} name="q" value={url} placeholder="e.g., https://lore.kernel.org/lkml/E17yO3f-0002MM-00@pegasus" />
-        <div class={tw`my-4 flex justify-end`}>
-          <button type="submit" class={btn}>Prettify!</button>
-        </div>
-      </form>
+      <div>
+        <form>
+          <input id="username" type="text" class={inp} name="q" value={url} placeholder="e.g., https://lore.kernel.org/lkml/E17yO3f-0002MM-00@pegasus" />
+          <div class={tw`my-4 flex justify-end`}>
+            <button type="submit" class={btn}>Prettify!</button>
+          </div>
+        </form>
+      </div>
       { data && <div dangerouslySetInnerHTML={{ __html: data.content }} /> }
     </div>
   );
