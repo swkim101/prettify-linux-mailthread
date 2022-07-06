@@ -1,6 +1,6 @@
 # Prettify-linux-mails
 
-![demo](!./demo.gif)
+![demo](./demo.gif)
 
 ### Usage
 
